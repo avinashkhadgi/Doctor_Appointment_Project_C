@@ -1,0 +1,331 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,pass,id,age,mob,x,y,p,q,m,n;
+  char ch[100],add[40],loc[30];
+  char c[10],d[10],e[10],f[10];
+  //show();
+  //int arr[];
+  
+  l1:
+  l2:
+  l3:
+  l4:	
+  printf("\n-------------------------------------------------------------------------------\n");
+  printf("\n \n \t \t    # Are you Patient Doctor or Admin # \n \n \n ");	
+  printf("-------------------------------------------------------------------------------\n");
+  printf("\n\t1.Patient\t");
+  printf("\t2.Doctor\t");
+  printf("\t3.Admin\t \n");
+  printf("\n\nEnter your choice:-\n\n \n");
+  scanf("%d",&a);
+  
+  switch (a)       // switch (a) for 1.) Patient.             first switch (a)
+  {
+  	
+  	
+    case 1:
+	     l5:
+	     	
+      	printf("\n\t1.Login\t");
+      	printf("\t2.Registration\t \n");
+    	printf("\n\nEnter your choice:-\n \n");
+      	scanf("%d",&p);
+      	
+      	switch(p) 	                            //second switch (p)
+      { 
+        case 1: 								//case 1 user login
+     
+    
+        printf("Id:-\t" );
+        scanf("%d",&x);
+        									
+        printf("password:-\t" );
+        scanf("%d",&y);								//user login
+    
+        if(id==x && pass==y)
+        {
+        	 printf("\n\t\t  \t You have succefully login:-\n");  
+        	 printf("--------------------------------------------------------------------------------\n");
+			 l7:
+			 printf("\nCities:-\n");
+        	 printf("\n1.Nagpur\t");
+             printf("\t2.Pune\n");
+             
+             printf("\n\nEnter your choices:-\n");
+             scanf("%d",&q);      					   // third switch  (q)
+             
+             switch (q)
+             {
+             	
+             	case 1:  									// case 1 for nagpur
+             		printf("\n\n Doctors\n\n");
+        	        
+					printf("\t1.Dr.Vipul\t");
+                    printf("\t2.Dr.Avinash\t");
+                    printf("\n\nEnter your choices:-\n\n");
+                    scanf("%d",&q);
+            
+                switch (q)
+                {
+			     case 1:
+			     	printf("\n\tyou have choosed Dr.vipul\n");
+			     	printf("\n Dr.vipul  Bachelor of Medicine,\n Bachelor of Surgery (MBBS, BMBS, MBChB, MBBCh)\n Doctor of Medicine (MD, Dr.MuD, Dr.Med)\n \n");
+			        printf("1.Name:-\t" );
+        			scanf("%s",&ch);
+        			printf("2.Age:-\t" );
+        			scanf("%d",&age);
+        			printf("3.Mob No:-\t" );
+        			scanf("%d",&mob);
+        			printf("\n\t \t \t Appointment is booked\n");
+        			printf("-------------------------------------------------------------------------------\n");
+			     	
+					 break;
+			     case 2:
+			     	printf("\t\tyou have choosed Dr.avinash\n");
+			     	printf("\n Dr.Avinash  Bachelor of Medicine,\n Bachelor of Surgery (MBBS, BMBS, MBChB, MBBCh)\n Doctor of Medicine (MD, Dr.MuD, Dr.Med)\n \n");
+			        printf("1.Name:-\t" );
+        			scanf("%s",&ch);
+        			printf("2.Age:-\t" );
+        			scanf("%d",&age);
+        			printf("3.Mob No:-\t" );
+        			scanf("%d",&mob);
+        			printf("\n\t \t \t Appointment is booked\n");
+        			printf("-------------------------------------------------------------------------------\n");
+			     	break;
+			    }  
+			    goto l2;
+			
+			
+                	
+                 //l9:
+				 case 2: 									// case 2 for pune
+             		printf("\t Doctors :-     \n");
+        	        
+					printf("\t1.Dr.Ruchika\t");
+                    printf("\t2.Dr.Shraddha\t");
+                    printf("\nEnter your choices:-\n");
+                    scanf("%d",&q);
+                    
+                 switch (q)
+                {
+			     case 1:
+			     	printf("\t\tyou have choosed Dr.Ruchika\n");
+			     	printf("\n Dr.Ruchika  Bachelor of Medicine,\n Bachelor of Surgery (MBBS, BMBS, MBChB, MBBCh)\n Doctor of Medicine (MD, Dr.MuD, Dr.Med)\n \n");
+			        printf("1.Name:-\t" );
+        			scanf("%s",&ch);
+        			printf("2.Age:-\t" );
+        			scanf("%d",&age);
+        			printf("3.Mob No:-\t" );
+        			scanf("%d",&mob);
+        			printf("\n\t \t \t Appointment is booked\n");
+			     	printf("-------------------------------------------------------------------------------\n");
+			     	
+			     	break;
+			     case 2:
+			     	printf("\t\tyou have choosed Dr.Shraddha\n");
+					printf("\n Dr.Shraddha  Bachelor of Medicine,\n Bachelor of Surgery (MBBS, BMBS, MBChB, MBBCh)\n Doctor of Medicine (MD, Dr.MuD, Dr.Med)\n \n");
+			        printf("1.Name:-\t" );
+        			scanf("%s",&ch);
+        			printf("2.Age:-\t" );
+        			scanf("%d",&age);
+        			printf("3.Mob No:-\t" );
+        			scanf("%d",&mob);
+        			printf("\n\t \t \t Appointment is booked\n");
+			     	printf("-------------------------------------------------------------------------------\n");
+			     	
+			     	break;
+			    }   
+			      goto l2;
+             
+			 }
+		}
+		else 
+		{
+			printf("\nSorry!!! You have enterd wrong id and pass\n");
+		}
+        goto l1;
+        
+    	case 2:  
+		//int show(arr);  
+		
+		printf("1.Name:-" );					//user regesration.
+        scanf("%s",&ch);
+        
+        printf("2.Id:-\t" );
+        scanf("%d",&id);
+        
+        printf("3.Age:-\t" );
+        scanf("%d",&age);
+        
+        printf("4.Password:-\t" );
+        scanf("%d",&pass);
+        printf("\n \t \t \t regestration completed!!!!!\n");
+        printf("-------------------------------------------------------------------------------\n");
+        goto l1;
+
+      }   
+      break;
+      // }
+	 
+	// switch (a)       // switch (a) for 2)doctor.
+  //{ 
+      case 2: 
+      	
+      	l6:
+      	printf("\n\t1.Login\t");
+      	printf("\t2.Registration\t");
+    	printf("\n\nEnter your choice:-\n");
+      	scanf("%d",&m);      							// switch (m)
+      	
+      	switch(m)
+      	{
+        case 1:							
+     
+        printf("Id:-\t" );
+        scanf("%d",&x);
+        									
+        printf("Password:-\t" );
+        scanf("%d",&y);							
+    
+         if(id==x && pass==y)
+        {
+		  
+		printf("\n \t \t You have succefully login:-\n \n ");  
+		printf("-------------------------------------------------------------------------------\n");
+		printf("1.Show profile\t");
+      	printf("\t2.Edit profile\t");
+    	printf("\n\n 3.Show all appointment:-\n");
+      	scanf("%d",&n); 								//switch(n)
+      	
+	     	switch(n)
+		{
+		
+		    case 1:
+		  	printf("\n show profile:-");
+		  	printf("\n 1.Name:-%s\n 2.Id:- %d\n 3.Mob:- %d\n 4.Address:- %s\n 5.Location :- %s\n\n\n",ch,id,mob,add,loc);
+	
+		   break;
+		    
+		    case 2:
+		     printf("\nEdit profile \n");
+			 goto l8;
+			 break;
+			 
+			  
+		    case 3:
+		  	printf("\n Show all appontment timing\n moring 10:00 AM  to  4:00 PM  \n Evening 6:00 PM  to  10:00 PM\n");
+		    break;
+		  
+	}
+        }
+         else 
+		{
+			printf("\nSorry!!! You have enterd wrong id and name\n");
+		}
+		
+		break;
+		
+		case 2:      						 //registration			
+        l8:	
+        printf("1.Name:-\t" );
+        scanf("%s",&ch);
+        
+        
+        printf("2.Id:-\t" );
+        scanf("%d",&id);
+        
+        printf("3.Password:-\t" );
+        scanf("%d",&pass);
+    
+        
+        printf("4.Mob No:-\t" );
+        scanf("%d",&mob);
+        
+        printf("5.Address:-\t");
+        scanf("%s",&add);
+        
+        printf("6.Location:-\t");
+        scanf("%s",&loc);
+        
+        //printf("7.Appointment time:-\t");
+        //scanf("%d",&appo);
+    
+        printf("\n \t \t \t  Doctor registration is  done succefully\n");
+        printf("-------------------------------------------------------------------------------\n");
+        
+    
+   }    
+        goto l3;
+    
+  //}
+  
+     //switch (a)       // switch (a) for 3) admin
+  //{        
+      case 3:
+      	
+      	printf("\t1.Doctor registration\n");
+      	printf("\t2.Patient registration\n");
+      	printf("\t3.doctor list\n");
+      	printf("\t4.Patient list\n");
+      	printf("\t5.Add cities\n");
+    	printf("\n\nEnter your choice:-\n \n \n ");
+      	scanf("%d",&b);
+
+      	switch(b) 
+      { 
+        case 1:
+     
+        printf("doctor registration:-\n" );
+        goto l6;
+		break;
+        
+        case 2: 
+      
+        printf("Patient Registration:-" );
+        goto l5;
+		break;
+        
+        
+        case 3:
+  
+        printf("Doctor list:-\n 1.Dr Avinash\n 2.Dr Shraddha\n 3.Dr Vipul\n 4.Dr ruchika\n" );
+        goto l7;
+        break;
+        
+        case 4: 
+   
+        printf("Patients List:-" );
+        break;
+        
+        case 5: 
+   
+        //printf("Add cities:-\n 1.Nagpur\n 2. Pune\n 3. Mumbai\n 4. Delhi\n" );
+        //printf("Add cities:-\n \n");
+        //scanf("%s%s%s%s",c,d,e,f);
+        
+        printf("Add cities :-\n\n1:-\t" );
+        scanf("%s",c);
+        
+        printf("2:-\t" );
+        scanf("%s",d);
+        
+        printf("3:-\t" );
+        scanf("%s",e);
+    
+        printf("4:-\t" );
+        scanf("%s",f);
+        break;
+	
+		default:printf("\n Sorry!!!!!!You have enterd wrong choice");
+		break;	
+        
+      }   
+      break;
+      	
+      	default:printf("\n Sorry!!!!!! You have enterd wrong choice");
+			break;	
+       }
+        goto l4;
+  return 0;
+ }
